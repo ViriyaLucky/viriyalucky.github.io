@@ -25,9 +25,9 @@
 }
 
 .header_area .main-menu .navbar-nav .nav-item .active {
-  background: var(--gradient-color);
+  background: #325db9;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
   background-clip: text;
   border: 1px;
   border-radius: 20%;
