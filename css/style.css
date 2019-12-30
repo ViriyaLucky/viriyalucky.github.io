@@ -25,17 +25,12 @@
 }
 
 .header_area .main-menu .navbar-nav .nav-item .active {
-  background: #325db9;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: black;
   background-clip: text;
-  border: 1px;
-  border-radius: 20%;
 }
 
 .header_area .main-menu .navbar-nav .nav-item a:hover {
   background: var(--gradient-color);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: grey;
   background-clip: text;
 }
