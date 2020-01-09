@@ -221,7 +221,8 @@ html {
 
 /* Services Area */
 .select-skill {
-  height: 40px;
+  margin: 10px;
+  height: 10vh;
 }
 .site-main .services-area {
   padding: 2rem 2rem;
