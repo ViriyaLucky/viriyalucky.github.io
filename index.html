@@ -12,7 +12,6 @@
     <!--  font awesome icons  -->
     <link rel="stylesheet" href="./css/all.min.css" />
 
-   
     <!--  Owl-carousel css file  -->
     <link
       rel="stylesheet"
@@ -32,8 +31,7 @@
 
   <body>
     <!--  ======================= Start Header Area ============================== -->
-
-    <header class="header_area">
+    <header class="header_area " id="myHeader">
       <div class="main-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
           <h2 class="navbar-brand" href="#">Portfolio</h2>
@@ -61,20 +59,21 @@
                 <a class="nav-link anchor-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link anchor-link" href="#">contact</a>
+                <a class="nav-link anchor-link" href="#contact">contact</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
     <!--  ======================= End Header Area ============================== -->
 
     <!--  ======================= Start Main Area ================================ -->
     <main class="site-main">
       <!--  ======================= Start Banner Area =======================  -->
-      <section class="site-banner"  id="home">
+      <section class="site-banner" id="home">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 site-title">
@@ -94,11 +93,11 @@
           </div>
         </div>
       </section>
-      <!--  ======================= End Banner Area =======================  -->
-      <div class="select" id="aboutme"></div>
+      <!--  ======================= End Banner Area ======================= 
+      <div class="select"></div> -->
       <!--  ========================= About Area ==========================  -->
 
-      <section class="about-area">
+      <section class="about-area" id="aboutme">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6 col-md-12">
@@ -139,18 +138,12 @@
         </div>
       </section>
 
-      <!--  ========================= End About Area ==========================  -->
-      <div class="select-skill" id="skills">
-          <p>
-
-
-
-          </p>
-      </div>
-    <br>
+      <!--  ========================= End About Area ==========================  
+      <div class="select-skill"></div>
+      <br />-->
       <!--  ====================== Start Expertise Area =============================  -->
 
-      <section class="services-area">
+      <section class="services-area" id="skills">
         <div class="container">
           <div class="col-lg-12 text-center services-title">
             <h1 class="text-uppercase title-text">Skills</h1>
@@ -170,9 +163,7 @@
                     <h5 class="card-title text-uppercase font-roboto">
                       CSS
                     </h5>
-                    <p class="card-text text-secondary">
-                      Moderate
-                    </p>
+                    <div class="skills css">80%</div>
                   </div>
                 </div>
               </div>
@@ -189,9 +180,7 @@
                     <h5 class="card-title text-uppercase font-roboto">
                       HTML 5
                     </h5>
-                    <p class="card-text text-secondary">
-                      Moderate
-                    </p>
+                    <div class="skills html">80%</div>
                   </div>
                 </div>
               </div>
@@ -208,9 +197,7 @@
                     <h5 class="card-title text-uppercase font-roboto">
                       Javascript
                     </h5>
-                    <p class="card-text text-secondary">
-                      Moderate
-                    </p>
+                    <div class="skills css">80%</div>
                   </div>
                 </div>
               </div>
@@ -227,9 +214,7 @@
                     <h5 class="card-title text-uppercase font-roboto">
                       Node.js
                     </h5>
-                    <p class="card-text text-secondary">
-                      Moderate
-                    </p>
+                    <div class="skills node">40%</div>
                   </div>
                 </div>
               </div>
@@ -246,24 +231,25 @@
                     <h5 class="card-title text-uppercase font-roboto ">
                       Angular
                     </h5>
-                    <p class="card-text text-secondary">
-                      Moderate
-                    </p>
+                    <div class="skills angular">70%</div>
+                    <br />
                     <h5 class="card-text ">
                       Projects
                     </h5>
                     <p class="card-text text-secondary">
-                    <a
-                      class="card-text text-secondary"
-                      href="https://github.com/ViriyaLucky/Eisenhower-Matrix"
-                      >Eisenhower-Matrix
-                    </a></p>
+                      <a
+                        class="card-text text-secondary"
+                        href="https://github.com/ViriyaLucky/Eisenhower-Matrix"
+                        >Eisenhower-Matrix
+                      </a>
+                    </p>
                     <p class="card-text text-secondary">
-                    <a
-                    class="card-text text-secondary"
-                      href="https://github.com/ViriyaLucky/Online-Exam"
-                      >Online-Exam
-                    </a></p text-secondary">
+                      <a
+                        class="card-text text-secondary"
+                        href="https://github.com/ViriyaLucky/Online-Exam"
+                        >Online-Exam
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -273,20 +259,21 @@
       </section>
 
       <!--  ====================== End Expertise Area =============================  -->
-
     </main>
     <!--  ======================= End Main Area ================================ -->
 
-    <footer class="footer-area">
+    <footer class="footer-area" id="contact">
       <div class="container">
         <div class="">
           <div class="social text-center">
-            <h5 class="text-uppercase">Find me</h5>
-            <a href="https://github.com/ViriyaLucky"><i class="fab fa-github"></i></a>
+            <h5>Find me</h5>
+            <a href="https://github.com/ViriyaLucky"
+              ><i class="fab fa-github"></i
+            ></a>
           </div>
           <div class="copyrights text-center">
             <p class="para">
-              Copyright ©2019 All rights reserved 
+              Copyright ©2019 All rights reserved
             </p>
           </div>
         </div>
@@ -325,11 +312,36 @@
     <!--  isotope js library  -->
     <script src="./vendor/isotope/isotope.min.js"></script>
 
-   
     <!--  Owl-carousel js file  -->
     <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
 
     <!--  custom js file  -->
     <script src="./js/main.js"></script>
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
   </body>
 </html>
